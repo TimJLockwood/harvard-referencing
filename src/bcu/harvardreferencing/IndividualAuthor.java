@@ -1,12 +1,12 @@
 package bcu.harvardreferencing;
 
-
 /**
- * Creates an IndividualAuthor object and stores the initials and last name of an author. It implements 
- * the Author interface.
+ * This class represents an individual author.
+ * <p>
+ * It creates an IndividualAuthor object and stores the initials and last name
+ * of an author.
  * 
  * @author Andrew Kay
- *
  */
 public class IndividualAuthor implements Author {
 	private final String lastName;
@@ -14,12 +14,11 @@ public class IndividualAuthor implements Author {
 
 	/**
 	 * This creates an IndividualAuthor object and stores the name of the author.
+	 * 
 	 * @param lastName
 	 *            The last name of the author.
 	 * @param initials
 	 *            The initials of the author.
-	 * @see Author
-	 * @see InstitutionalAuthor
 	 */
 	public IndividualAuthor(String lastName, String initials) {
 		this.lastName = lastName;
@@ -27,9 +26,9 @@ public class IndividualAuthor implements Author {
 	}
 
 	/**
-	 * Gets the full name of the author in the format lastName, initials.
+	 * The author's full name in the format "lastName, initials".
 	 * 
-	 * @return the authors full name in the format lastName, initials as a single string (String).
+	 * @return Gets the full name of the author
 	 */
 	@Override
 	public String fullName() {
@@ -39,7 +38,7 @@ public class IndividualAuthor implements Author {
 	/**
 	 * Gets the in-text citation name (last name) of the author.
 	 * 
-	 * @return gets the surname(in text citation) of the author (String).
+	 * @return The surname of the author.
 	 */
 	@Override
 	public String citeName() {

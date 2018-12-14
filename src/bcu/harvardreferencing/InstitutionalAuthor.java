@@ -1,24 +1,22 @@
 package bcu.harvardreferencing;
 
 /**
- * 
- * Creates a InstitutionalAuthor object and 
- * stores the name of an Institutional author.
+ * This class represents an institutional author.
+ * <p>
+ * Creates a InstitutionalAuthor object and stores the name of an institutional
+ * author.
  * 
  * @author Andrew Kay
- *
  */
 
 public class InstitutionalAuthor implements Author {
 	private final String name;
 
 	/**
-	 * This creates an InstitutionalAuthor Object
+	 * This creates an InstitutionalAuthor Object.
 	 * 
 	 * @param name
 	 *            The name of the institution.
-	 * @see Author
-	 * @see IndividualAuthor
 	 */
 
 	public InstitutionalAuthor(String name) {
@@ -28,7 +26,7 @@ public class InstitutionalAuthor implements Author {
 	/**
 	 * Gets the full name of the institution for referencing in bibliographies.
 	 * 
-	 * @return gets the full name of the Institution (String)
+	 * @return The full name of the Institution.
 	 */
 	@Override
 	public String fullName() {
@@ -36,9 +34,9 @@ public class InstitutionalAuthor implements Author {
 	}
 
 	/**
-	 * Gets the name of the institution for in-text citations
+	 * Gets the name of the institution for in-text citations.
 	 * 
-	 * @return The name of the institution for in-text citations (String)
+	 * @return The name of the institution for in-text citations.
 	 */
 	@Override
 	public String citeName() {
